@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certifications - Portfolio POURNY J.</title>
+    <link rel="stylesheet" href="../CSS/style_tab.css">
+</head>
+<body>
+        <!-- Header -->
+
+    <header>
+
+        <a href="index.html"><h1>POURNY JOSH</h1></a>
+
+        <!-- Boutons d'accès rapide -->
+
+        <div id="header_nav">
+
+            <!-- GitHub -->
+
+            <a href="https://github.com/Skyro-source" class="header_link">
+                <div class="header_button" id="git">
+                    <img src="../Images/Clipart/github_PNG40.png" alt="logo_git" class="header_img">
+                    <p class="header_txt">Github</p>
+                </div>
+            </a>
+
+            <a href="CV.html" class="header_link">
+                <div class="header_button" id="cv"> 
+                    <img src="../Images/Clipart/embauche.png" alt="notepad" class="header_img">
+                    <p class="header_txt">CV</p>  
+                </div>
+            </a>
+
+        </div>
+
+    </header>
+
+    <!-- Page principale -->
+
+    <div id="main">
+
+        <!-- Panneau de navigation -->
+
+        <div id="side_nav">
+
+            <a href="https://github.com/Skyro-source" class="nav_button">GitHub</a>
+            <a href="cv.html" class="nav_button">CV</a>  
+            <a href="parcours.html" class="nav_button">Parcours</a>  
+            <p class="nav_button" id="nav_active">Certifications</p>  
+            <a href="projets.html" class="nav_button">Projets</a>  
+            <a href="epreuve_e5.html" class="nav_button">Épreuve E5</a>
+
+        </div>
+
+        <!-- Contenu principal -->
+
+        <div id="contents">
+
+            <h1 align="center" id="title">Certifications</h1>
+
+            <div id="elements">
+
+                <a href="../Images/Certifications/Certificat_Module 1-1.png" id="cert_link">
+                    <img src="../Images/Certifications/Certificat_Module 1-1.png" alt="Img_cert" id="cert_img">
+                </a>
+                <p id="cert_txt">(Atelier RGPD) Attestation de suivi - MODULE 1</p>
+
+                <div id="button_div">
+                    <button onclick="changerImage(0)" class="carrous_button active"></button>
+                    <button onclick="changerImage(1)" class="carrous_button"></button>
+                    <button onclick="changerImage(2)" class="carrous_button"></button>
+                    <button onclick="changerImage(3)" class="carrous_button"></button>
+                    <button onclick="changerImage(4)" class="carrous_button"></button>
+                    <button onclick="changerImage(5)" class="carrous_button"></button>
+                </div>
+
+                <!--<img src="../Images/Certifications/Attestation_de_suivi_Module 2-1.png" alt="Img_cert" class="cert_img">
+                <img src="../Images/Certifications/Certificat_Module 3-1.png" alt="Img_cert" class="cert_img">
+                <img src="../Images/Certifications/Certificat_Module 4-1.png" alt="Img_cert" class="cert_img">
+                <img src="../Images/Certifications/Certificat_Module 5-1.png" alt="Img_cert" class="cert_img">
+                <img src="../Images/Certifications/Attestation_de_suivi_6-1.png" alt="Img_cert" class="cert_img"> -->
+
+            </div>
+
+        </div>
+        
+    </div>
+    
+    <script src="../JS/carrousel.js"></script>
+</body>
+</html>

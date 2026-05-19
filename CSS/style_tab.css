@@ -1,0 +1,184 @@
+/** Changement pour tout le document */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    background-color: #121212;
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img, h1, h2, p, a{
+    background-color: transparent;
+}
+
+h1{
+    font-family: arial black;
+}
+
+/** Changement pour les boutons dans le header */
+
+header{
+    position: sticky; /** Garde le header toujours en haut de la page */
+    top: 0;
+    align-items: center;
+    background-color: #292929;
+    border-bottom: white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 15px;
+}
+
+#header_nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#header_nav{
+    background-color: #292929;
+    border-radius: 15px;
+}
+
+.header_button{
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    height: auto; 
+    justify-content: space-evenly;
+    padding: 10px;
+    width: 150px;  
+}
+
+.header_link{
+    margin: 10px;
+    background-color: transparent;
+}
+
+.header_img{
+    height: auto;
+    max-width: 50px;
+}
+
+.header_txt{
+    color: black;
+    font-size: x-large;
+}
+
+/** Panneau de navigation sur la gauche */
+
+#side_nav{
+    background-color: #292929;
+    border-right-color: white;
+    border-right-width: 1px;
+    border-right-style: solid;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 15%;
+    position: fixed;
+}
+
+.nav_button, #nav_active{
+    font-size: larger;
+    padding: 10px;
+    border-bottom: white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.nav_button:hover{
+    background-color: white;
+    color: black;
+}
+
+#nav_active{
+    background-color: white;
+    color: black;
+}
+
+/** Contenu principal */
+
+#contents{
+    width: 85%;
+    margin-left: auto; 
+}
+
+#elements{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/** Éléments lié au carrousel */
+
+#button_div{
+    display: flex;
+    flex-direction: row;
+}
+
+.carrous_button{
+    margin: 3px;
+    padding: 6px;
+    background-color: transparent;
+    border-radius: 360px;
+    border-style: solid;
+    border-color: white;
+    border-width: 3px;
+}
+
+.carrous_button {
+    margin: 3px;
+    padding: 6px;
+    background-color: white;
+    border-radius: 360px;
+    border-style: solid;
+    border-color: white;
+    border-width: 3px;
+}
+
+#cert_img{
+    width: 50%;
+    height: auto;
+}
+
+#cert_txt{
+    margin: 20px;
+}
+
+#cert_link{
+    display: contents;
+}
+
+
+/** Style pour des éléments spécifiques */
+
+#title{
+    font-size: 50px;
+    padding: 25px;
+}
+
+#cv, #git{
+    transition: background-color 0.5s, transform 0.2s;
+}
+
+#cv:hover, #git:hover{
+    transform: scale(1.05);
+}
+#cv:hover{
+    background-color: #E60000;    
+}
+
+#git:hover{
+    background-color: #A800E6;
+}
+

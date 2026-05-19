@@ -1,0 +1,152 @@
+/** Changement pour tout le document */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    background-color: #121212;
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img, h1, h2, p, a{
+    background-color: transparent;
+}
+
+h1{
+    font-family: arial black;
+}
+
+/** Changement pour les boutons dans le header */
+
+header{
+    align-items: center;
+    background-color: #292929;
+    border-bottom: white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 15px;
+}
+
+#header_nav, #nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#header_nav{
+    background-color: #292929;
+    border-radius: 15px;
+}
+
+.header_button{
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    height: auto; 
+    justify-content: space-evenly;
+    padding: 10px;
+    width: 150px;  
+}
+
+.header_link{
+    margin: 10px;
+    background-color: transparent;
+}
+
+/** Alignement des éléments dans le main */
+
+#main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.txt_desc{
+    font-size: xx-large;
+    text-align: center;
+    padding: 10px;
+    
+}
+
+#nav{
+    margin: 100px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+/** Changement pour les boutons dans le main */
+
+.nav_img{
+    height: auto;
+    max-width: 50px;
+}
+
+.nav_button{
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0x;
+    padding: 10px;
+    width: 225px;
+}
+
+.nav_txt{
+    color: black;
+    font-size: x-large;
+}
+
+.nav_link{
+    margin: 30px;
+    background-color: transparent;
+}
+
+/** Style pour des éléments spécifiques */
+
+#name{
+    font-size: 75px;
+}
+
+#cv, #git, #parc, #cert, #projet, #epreuve{
+    transition: background-color 0.5s, transform 0.2s;
+}
+
+#cv:hover, #git:hover, #parc:hover, #cert:hover, #projet:hover, #epreuve:hover{
+    transform: scale(1.05);
+}
+#cv:hover{
+    background-color: #E60000;    
+}
+
+#git:hover{
+    background-color: #A800E6;
+}
+
+#parc:hover{
+    background-color: #3DE600;
+}
+
+#cert:hover{
+    background-color: #00E6E6;
+}
+
+#projet:hover{
+    background-color: #E6B400;
+}
+
+#epreuve:hover{
+    background-color: #1700E6;
+}
+
+
+
