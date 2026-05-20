@@ -9,7 +9,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-img, h1, h2, p, a{
+img, h1, h2, h3, h4, p, a{
     background-color: transparent;
 }
 
@@ -120,6 +120,101 @@ header{
 }
 
 /** Contenu principal */
+
+#contents{
+    width: 85%;
+    margin-left: auto; 
+}
+
+#elements {
+    display: inline-flex; /* instead of flex */
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.cert_img{
+    width: 400px;
+    height: auto;
+}
+
+.cert_div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #292929;
+    border-radius: 15px;
+    margin: 20px;
+    padding: 30px;
+    padding-bottom: 20px;
+    transition: transform 0.2s;  
+}
+
+.cert_div:hover{
+    transform: scale(1.05);
+}
+
+.cert_txt{
+    padding: 10px;
+}
+
+
+
+/** Éléments lié au carrousel 
+
+#carrous_div{
+    display: contents;
+}
+
+#button_div{
+    display: flex;
+    flex-direction: row;
+}
+
+.carrous_button{
+    margin: 3px;
+    padding: 6px;
+    background-color: transparent;
+    border-radius: 360px;
+    border-style: solid;
+    border-color: white;
+    border-width: 3px;
+}
+
+#active{
+    margin: 3px;
+    padding: 6px;
+    background-color: white;
+    border-radius: 360px;
+    border-style: solid;
+    border-color: white;
+    border-width: 3px;
+}
+
+#cert_img{
+    width: 50%;
+    height: auto;
+}
+
+#cert_txt{
+    margin: 20px;
+}
+
+#cert_link{
+    display: contents;
+}
+*/
+
+
+/** Style pour des éléments spécifiques */
+
+#title{
+    font-size: 50px;
+    padding: 25px;
+}
 
 #cv, #git{
     transition: background-color 0.5s, transform 0.2s;
