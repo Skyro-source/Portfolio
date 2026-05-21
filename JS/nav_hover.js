@@ -1,5 +1,5 @@
-let directories = ["../Images/Clipart/github_PNG40_noir.png", "../Images/Clipart/embauche_noir.png", 
-    "../Images/Clipart/itineraire_noir.png", "../Images/Clipart/etoile_noir.png", "../Images/Clipart/gestion-de-projet_noir.png", "../Images/Clipart/notepad_noir.png"];
+let directories = ["../Images/Logos/github_PNG40_noir.png", "../Images/Logos/outils-dedition_noir.png" ,"../Images/Logos/embauche_noir.png", 
+    "../Images/Logos/itineraire_noir.png", "../Images/Logos/etoile_noir.png", "../Images/Logos/gestion-de-projet_noir.png", "../Images/Logos/notepad_noir.png"];
 
 function changerLogo(button, i) {
     let nav_img = button.querySelector(".nav_img"); //Nous utilions button l'élément d'un div spécifique et non pas du document entier
@@ -29,5 +29,5 @@ function restaurerLogo(button) {
     });
 
     nav_txt.style.color = "white";
-    button.style.backgroundColor = "#292929";
+    button.style.backgroundColor = "#121212";
 }

@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parcours - Portfolio POURNY J.</title>
-    <link rel="stylesheet" href="../CSS/style_tab.css">
+    <link rel="stylesheet" href="../CSS/style_parcours.css">
+    <link rel="icon" src="../Images/Clipart/itineraire.png">
 </head>
 <body>
         <!-- Header -->
@@ -21,14 +22,14 @@
 
             <a href="https://github.com/Skyro-source" class="header_link">
                 <div class="header_button" id="git">
-                    <img src="../Images/Clipart/github_PNG40_noir.png" alt="logo_git" class="header_img">
+                    <img src="../Images/Logos/github_PNG40_noir.png" alt="logo_git" class="header_img">
                     <p class="header_txt">Github</p>
                 </div>
             </a>
 
             <a href="CV.html" class="header_link">
                 <div class="header_button" id="cv"> 
-                    <img src="../Images/Clipart/embauche_noir.png" alt="notepad" class="header_img">
+                    <img src="../Images/Logos/embauche_noir.png" alt="notepad" class="header_img">
                     <p class="header_txt">CV</p>  
                 </div>
             </a>
@@ -47,35 +48,43 @@
 
             <a href="https://github.com/Skyro-source" class="nav_link">
                 <div class="nav_button" onmouseover="changerLogo(this, 0)" onmouseout="restaurerLogo(this)">
-                    <img src="../Images/Clipart/github_PNG40.png" alt="git" class="nav_img">
+                    <img src="../Images/Logos/github_PNG40.png" alt="git" class="nav_img">
                     <p class="nav_txt">Github</p>
                 </div>
             </a>
-            <a href="cv.html" class="nav_link">
+
+            <a href="competences.html" class="nav_link">
                 <div class="nav_button" onmouseover="changerLogo(this, 1)" onmouseout="restaurerLogo(this)">
-                    <img src="../Images/Clipart/embauche.png" alt="git" class="nav_img">
+                    <img src="../Images/Logos/outils-dedition.png" alt="git" class="nav_img">
+                    <p class="nav_txt">Compétences</p>
+                </div>
+            </a>
+            
+            <a href="cv.html" class="nav_link">
+                <div class="nav_button" onmouseover="changerLogo(this, 2)" onmouseout="restaurerLogo(this)">
+                    <img src="../Images/Logos/embauche.png" alt="git" class="nav_img">
                     <p class="nav_txt">CV</p>
                 </div>
             </a>  
             <div class="nav_button" id="nav_active">
-                    <img src="../Images/Clipart/itineraire_noir.png" alt="git" class="nav_img">
+                    <img src="../Images/Logos/itineraire_noir.png" alt="git" class="nav_img">
                     <p id="nav_txt_active">Parcours</p>
             </div>
             <a href="certifications.html" class="nav_link">
-                <div class="nav_button" onmouseover="changerLogo(this, 3)" onmouseout="restaurerLogo(this)">
-                    <img src="../Images/Clipart/etoile.png" alt="git" class="nav_img">
+                <div class="nav_button" onmouseover="changerLogo(this, 4)" onmouseout="restaurerLogo(this)">
+                    <img src="../Images/Logos/etoile.png" alt="git" class="nav_img">
                     <p class="nav_txt">Certifications</p>
                 </div>
             </a>    
             <a href="projets.html" class="nav_link">
-                <div class="nav_button" onmouseover="changerLogo(this, 4)" onmouseout="restaurerLogo(this)">
-                    <img src="../Images/Clipart/gestion-de-projet.png" alt="git" class="nav_img">
+                <div class="nav_button" onmouseover="changerLogo(this, 5)" onmouseout="restaurerLogo(this)">
+                    <img src="../Images/Logos/gestion-de-projet.png" alt="git" class="nav_img">
                     <p class="nav_txt">Projets</p>
                 </div>
             </a>  
             <a href="epreuve_e5.html" class="nav_link">
-                <div class="nav_button" onmouseover="changerLogo(this, 5)" onmouseout="restaurerLogo(this)">
-                    <img src="../Images/Clipart/notepad.png" alt="git" class="nav_img">
+                <div class="nav_button" onmouseover="changerLogo(this, 6)" onmouseout="restaurerLogo(this)">
+                    <img src="../Images/Logos/notepad.png" alt="git" class="nav_img">
                     <p class="nav_txt">Épreuve E5</p>
                 </div>
             </a>
@@ -85,7 +94,94 @@
         <!-- Contenu principal -->
 
         <div id="contents">
-            <h1 align="center" id="title">Certifications</h1>
+
+            <div id="title_div">
+                <h1 align="center" id="title">Parcours</h1>
+                <div id="title_underline"></div>
+            </div>
+            
+            <div class="div_type">
+                <img class="parc_img" src="../Images/Logos/chapeau-de-remise-de-diplome_noir.png">
+                <h2 id="parc_txt">Scolaire</h2>
+            </div>
+
+            <div id="scolaire">
+
+                <div class="layout">
+
+                    <div class="line"></div>
+                    
+                    <div class="elements">
+
+                        <div class="parc_div">
+                            <div class="text_div">
+                                <img src="../Images/Logos/logo-gbrassens-2017.jpg" alt="logo pascal" class="logo_ecole">
+                                <h2 class="txt_desc" id="txt_form">Depuis 2025 : BTS SIO (Services Informatique aux organisations)</h2>
+                                <h3 class="txt_desc" id="txt_ecole">Lycée Georges Brassens</h3>
+                                <p class="txt_desc" id="p_desc">Formation enseignant la mise en place et gestion d'un réseau Informatique, de la programmation
+                                    web ou d'application, ou de l'importance de la cybersécurité pour sécurisation d'un résau informatique.
+                                </p>
+                                <p class="txt_desc" id="p_desc"><strong>Spécialité :</strong> SLAM (Solutions logicielles et applications métiers)</p>
+                            </div>
+                            <div class="img_div">
+                                <img src="../Images/Autres/lycee-rive-de-gier-960x640.png" alt="lycee_blaise_pascal" class="img_ecole">
+                                <a href="https://georges-brassens.ent.auvergnerhonealpes.fr/" class="lien_ecole">Site du lycée</a>
+                            </div>
+                        </div>
+
+                        <div class="parc_div">
+                            <div class="text_div">
+                                <img src="../Images/Logos/Logo_Blaise_Pascal.png" alt="logo pascal" class="logo_ecole">
+                                <h2 class="txt_desc" id="txt_form">2022 - 2025 : Bac STMG (Sciences et Technologies du Management et de la Gestion)</h2>
+                                <h3 class="txt_desc" id="txt_ecole"><i>Lycée Blaise Pascal</i></h3>
+                                <p class="txt_desc" id="p_desc">Instruit sur des notions de management, de mercatique, d’économie et de droit.</p>
+                                <p class="txt_desc" id="p_desc"><strong>Spécialité :</strong> Finance</p>
+                            </div>
+                            <div class="img_div">
+                                <img src="../Images/Autres/lycee_blaise_pascal.jpg" alt="lycee_blaise_pascal" class="img_ecole">
+                                <a href="https://blaise-pascal.ent.auvergnerhonealpes.fr/" class="lien_ecole">Site du lycée</a>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="div_type">
+                <img class="parc_img" src="../Images/Logos/valise.png">
+                <h2 id="parc_txt">Professionel</h2>
+            </div>
+
+            <div id="pro">
+
+                <div class="layout">
+
+                    <div class="line"></div>
+                    
+                    <div class="elements">
+
+                        <div class="parc_div">
+                            <div class="text_div">
+                                <img src="../Images/Logos/Logo-e-secure.png" alt="logo pascal" class="logo_ecole">
+                                <h2 class="txt_desc" id="txt_form">2026 : Stage de fin d'année de BTS SIO</h2>
+                                <h3 class="txt_desc" id="txt_ecole">E-Secure</h3>
+                                <p class="txt_desc" id="p_desc">Placeholder</p>
+                            </div>
+                            <div class="img_div">
+                                <!--<img src="../Images/Autres/lycee-rive-de-gier-960x640.png" alt="lycee_blaise_pascal" class="img_ecole">-->  
+                                <a href="https://www.e-secure.fr/" class="lien_ecole">Site de l'entreprise</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            
         </div>
         
     </div>

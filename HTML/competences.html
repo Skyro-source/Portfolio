@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projets - Portfolio POURNY J.</title>
-    <link rel="stylesheet" href="../CSS/style_grid.css">
-    <link rel="icon" src="../Images/Clipart/gestion-de-projet.png">
+    <title>Compétences - Portfolio POURNY J.</title>
+    <link rel="stylesheet" href="../CSS/style_tab.css">
 </head>
 <body>
-        <!-- Header -->
+    
+    <!-- Header -->
 
     <header>
 
@@ -33,7 +33,7 @@
                     <p class="header_txt">CV</p>  
                 </div>
             </a>
-            
+
         </div>
 
     </header>
@@ -53,35 +53,38 @@
                 </div>
             </a>
 
-            <a href="competences.html" class="nav_link">
-                <div class="nav_button" onmouseover="changerLogo(this, 1)" onmouseout="restaurerLogo(this)">
-                    <img src="../Images/Logos/outils-dedition.png" alt="git" class="nav_img">
-                    <p class="nav_txt">Compétences</p>
-                </div>
-            </a>
-            
+            <div class="nav_button" id="nav_active">
+                <img src="../Images/Logos/outils-dedition_noir.png" alt="git" class="nav_img">
+                <p id="nav_txt_active">Compétences</p>
+            </div>
+
             <a href="cv.html" class="nav_link">
                 <div class="nav_button" onmouseover="changerLogo(this, 2)" onmouseout="restaurerLogo(this)">
                     <img src="../Images/Logos/embauche.png" alt="git" class="nav_img">
                     <p class="nav_txt">CV</p>
                 </div>
             </a>  
+
             <a href="parcours.html" class="nav_link">
                 <div class="nav_button" onmouseover="changerLogo(this, 3)" onmouseout="restaurerLogo(this)">
                     <img src="../Images/Logos/itineraire.png" alt="git" class="nav_img">
                     <p class="nav_txt">Parcours</p>
                 </div>
             </a>
+
             <a href="certifications.html" class="nav_link">
                 <div class="nav_button" onmouseover="changerLogo(this, 4)" onmouseout="restaurerLogo(this)">
                     <img src="../Images/Logos/etoile.png" alt="git" class="nav_img">
                     <p class="nav_txt">Certifications</p>
-                </div>
-            </a>    
-            <div class="nav_button" id="nav_active">
-                <img src="../Images/Logos/gestion-de-projet_noir.png" alt="git" class="nav_img">
-                <p id="nav_txt_active">Projets</p>
             </div>
+
+            <a href="projets.html" class="nav_link">
+                <div class="nav_button" onmouseover="changerLogo(this, 5)" onmouseout="restaurerLogo(this)">
+                    <img src="../Images/Logos/gestion-de-projet.png" alt="git" class="nav_img">
+                    <p class="nav_txt">Projets</p>
+                </div>
+            </a>
+
             <a href="epreuve_e5.html" class="nav_link">
                 <div class="nav_button" onmouseover="changerLogo(this, 6)" onmouseout="restaurerLogo(this)">
                     <img src="../Images/Logos/notepad.png" alt="git" class="nav_img">
@@ -90,36 +93,20 @@
             </a>
 
         </div>
-
-        <!-- Contenu principal -->
-
+    
         <div id="contents">
 
             <div id="title_div">
-                <h1 id="title">Projets</h1>
+                <h1 align="center" id="title">Compétences</h1>
                 <div id="title_underline"></div>
             </div>
 
             <div id="elements">
-
-                <a href="https://github.com/Skyro-source/PHP-Stadia" id="cert_link">
-                    <div class="cert_div">
-                        <img src="../Images/Projets/stadia.png" alt="Image de certif" class="cert_img">
-                        <h3 class="cert_txt"><i>"Recréation"</i> de Stadia</h3>
-                    </div>
-                </a>
-
-                <a href="https://github.com/Skyro-source/Portfolio" id="cert_link">
-                    <div class="cert_div">
-                        <img src="../Images/Projets/portfolio.png" alt="Image de certif" class="cert_img">
-                        <h3 class="cert_txt">Portfolio</h3>
-                    </div>
-                </a>
     
             </div>
-
-        </div>
         
+        </div>
+            
     </div>
 
     <script src="../JS/nav_hover.js"></script>
