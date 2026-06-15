@@ -9,7 +9,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-img, h1, h2, h3, h4, p, a, i, strong{
+img, h1, h2, h3, p, a, i{
     background-color: transparent;
 }
 
@@ -121,80 +121,54 @@ header{
 #contents{
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     width: 85%;
-    margin-left: auto;
+    margin-left: auto; 
 }
 
-.layout{
+#elements {
     display: flex;
-    flex-direction: row;
-}
-
-.div_type{
-    display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
+}
+
+.type_div{
+    display: flex;
+    flex-direction: row;
+}
+
+.comp_div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 160px;
+    height: 160px;
     background-color: white;
-    width: fit-content;
-    height: fit-content;
-    padding: 15px;
+    margin: 30px;
     border-radius: 10px;
-    margin: 20px;
+    padding: 10px;
 }
 
-.line{
-    border-radius: 2px;
-    width: 5px;
-    background-color: white;
-    margin: 50px 75px 50px 0px
+.comp_img{
+    max-width: 130px;
+    max-height: 130px;
 }
 
-.elements {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.parc_div{
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: space-between;
-    border-color: white;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 15px;
-    padding: 20px;
-    margin: 20px 0px 20px 0px;
-    max-width: 1300px;
-}
-
-.text_div{
-    max-width: fit-content;
-    background-color: #252525;
-}
-
-.img_div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #252525;
+.comp_txt{
+    color: black;
+    padding: 10px;
 }
 
 /** Style pour des éléments spécifiques */
-
-#parc_txt{
-    color:black;
-    padding-left: 20px;
-}
 
 #title_div{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 #title{
@@ -203,66 +177,18 @@ header{
 }
 
 #title_underline{
-    width: 50%;
+    width: 20%;
     border-radius: 5px;
     border-bottom: 5px solid white;
 }
 
-.parc_img{
-    width: 50px;
-    height: fit-content;
-}
-
-.logo_ecole{
-    max-height: 60px;
-}
-
-.img_ecole{
-    margin: 20px;
-    max-width: 350px;
-    border-radius: 15px;
-    border-width: px;
-    border-style: solid;
-    border-color: white;
-}
-
-.txt_desc{
-    padding: 10px;
-}
-
-#txt_form{
-    font-size: 30px;
-}
-
-#txt_ecole{
-    font-size: 25px;
-}
-
-#p_desc, .lien_ecole{
-    font-size: 20px;
-}
-
-.lien_ecole{
-    background-color: white;
-    border-radius: 10px;
-    color: black;
-    padding: 10px;
-    padding-left: 75px;
-    padding-right: 75px;
-}
-
-.lien_ecole:hover{
-    background-color: blue;
-}
-
-#cv, #git, .lien_ecole{
+#cv, #git{
     transition: background-color 0.5s, transform 0.2s;
 }
 
-#cv:hover, #git:hover, .lien_ecole:hover{
+#cv:hover, #git:hover{
     transform: scale(1.05);
 }
-
 #cv:hover{
     background-color: #E60000;    
 }
@@ -270,3 +196,4 @@ header{
 #git:hover{
     background-color: #A800E6;
 }
+

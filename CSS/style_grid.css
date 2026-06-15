@@ -135,11 +135,7 @@ header{
     justify-content: center;
 }
 
-.cert_img{
-    border-radius: 15px 15px 0px 0px;
-    width: 400px;
-    height: auto;
-}
+
 
 .cert_div{
     display: flex;
@@ -153,12 +149,22 @@ header{
     border-color: white;
     margin: 10px 25px 35px 25px;
     padding-bottom: 20px;
-    transition: transform 0.2s;  
-    height: fit-content;
+    transition: transform 0.2s;
+    overflow: hidden;
+    width: 420px;
+    height: 310px;
 }
 
 .cert_div:hover{
     transform: scale(1.05);
+}
+
+.img_div{
+    overflow: hidden;  
+}
+
+.cert_img{
+    width: 100%;
 }
 
 .cert_txt{
