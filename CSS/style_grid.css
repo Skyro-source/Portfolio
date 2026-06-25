@@ -164,13 +164,16 @@ header{
 }
 
 .cert_img{
-    width: 100%;
+    height: 100%;
 }
 
 .cert_txt{
     padding-top: 20px;
 }
 
+#cert_link{
+    display: contents;
+}
 
 
 /** Éléments lié au carrousel 
@@ -213,9 +216,6 @@ header{
     margin: 20px;
 }
 
-#cert_link{
-    display: contents;
-}
 */
 
 

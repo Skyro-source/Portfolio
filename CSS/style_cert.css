@@ -3,13 +3,13 @@
 *{
     margin: 0px;
     padding: 0px;
-    background-color: #121212;
+    background-color: #252525;
     color: white;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-img, h1, h2, h3, h4, p, a{
+img, h1, h2, h3, h4, p, a, i{
     background-color: transparent;
 }
 
@@ -23,7 +23,7 @@ header{
     position: sticky; /** Garde le header toujours en haut de la page */
     top: 0;
     align-items: center;
-    background-color: #292929;
+    background-color: #121212;
     border-bottom: white;
     border-bottom-width: 1px;
     border-bottom-style: solid;
@@ -38,10 +38,7 @@ header{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-}
-
-#header_nav{
-    background-color: #292929;
+    background-color: #121212;
     border-radius: 15px;
 }
 
@@ -75,7 +72,7 @@ header{
 /** Panneau de navigation sur la gauche */
 
 #side_nav{
-    background-color: #292929;
+    background-color: #121212;
     border-right-color: white;
     border-right-width: 1px;
     border-right-style: solid;
@@ -87,7 +84,7 @@ header{
 }
 
 .nav_button, #nav_active{
-    background-color: #292929;
+    background-color: #121212;
     color: white;
     display: flex;
     flex-direction: row;
@@ -122,45 +119,61 @@ header{
 /** Contenu principal */
 
 #contents{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 85%;
     margin-left: auto; 
 }
 
 #elements {
-    display: inline-flex; /* instead of flex */
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin-top: 20px;
 }
 
-.cert_img{
-    width: 400px;
-    height: auto;
-}
+
 
 .cert_div{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    background-color: #292929;
+    justify-content: space-between;
+    background-color: #252525;
     border-radius: 15px;
-    margin: 20px;
-    padding: 30px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: white;
+    margin: 10px 25px 35px 25px;
     padding-bottom: 20px;
-    transition: transform 0.2s;  
+    transition: transform 0.2s;
+    overflow: hidden;
+    width: 420px;
+    height: 310px;
 }
 
 .cert_div:hover{
     transform: scale(1.05);
 }
 
-.cert_txt{
-    padding: 10px;
+.img_div{
+    overflow: hidden;  
 }
 
+.cert_img{
+    width: 100%;
+}
+
+.cert_txt{
+    padding-top: 20px;
+}
+
+#cert_link{
+    display: contents;
+}
 
 
 /** Éléments lié au carrousel 
@@ -203,17 +216,27 @@ header{
     margin: 20px;
 }
 
-#cert_link{
-    display: contents;
-}
 */
 
 
 /** Style pour des éléments spécifiques */
 
+#title_div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
 #title{
     font-size: 50px;
-    padding: 25px;
+    padding: 10px;
+}
+
+#title_underline{
+    width: 50%;
+    border-radius: 5px;
+    border-bottom: 5px solid white;
 }
 
 #cv, #git{
@@ -230,4 +253,5 @@ header{
 #git:hover{
     background-color: #A800E6;
 }
+
 

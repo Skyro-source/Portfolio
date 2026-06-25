@@ -162,6 +162,16 @@ header{
     padding: 10px;
 }
 
+.txt_type{
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    font-size: 25px;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
 /** Style pour des éléments spécifiques */
 
 #title_div{
