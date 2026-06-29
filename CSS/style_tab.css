@@ -3,7 +3,6 @@
 *{
     margin: 0px;
     padding: 0px;
-    background-color: #252525;
     color: white;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
@@ -17,13 +16,17 @@ h1{
     font-family: arial black;
 }
 
+body{
+    background: rgba(13, 23, 38, 1);
+}
+
 /** Changement pour les boutons dans le header */
 
 header{
     position: sticky; /** Garde le header toujours en haut de la page */
     top: 0;
     align-items: center;
-    background-color: #121212;
+    background-color: #080e18;
     border-bottom: white;
     border-bottom-width: 1px;
     border-bottom-style: solid;
@@ -31,6 +34,7 @@ header{
     flex-direction: row;
     justify-content: space-between;
     padding-left: 15px;
+    z-index: 1;
 }
 
 #header_nav{
@@ -38,19 +42,19 @@ header{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: #121212;
+    background-color: transparent;
     border-radius: 15px;
 }
 
 .header_button{
     align-items: center;
-    background-color: white;
+    border: 1px solid white;
     border-radius: 10px;
     display: flex;
     flex-direction: row;
     height: auto; 
     justify-content: space-evenly;
-    padding: 10px;
+    padding: 5px;
     width: 150px;  
 }
 
@@ -65,14 +69,15 @@ header{
 }
 
 .header_txt{
-    color: black;
+    color: whit;
     font-size: x-large;
 }
+
 
 /** Panneau de navigation sur la gauche */
 
 #side_nav{
-    background-color: #121212;
+    background-color: #080e18;
     border-right-color: white;
     border-right-width: 1px;
     border-right-style: solid;
@@ -80,11 +85,12 @@ header{
     flex-direction: column;
     height: 100%;
     width: 15%;
-    position: fixed;
+    position: fixed; 
+    z-index: 0;
 }
 
 .nav_button, #nav_active{
-    background-color: #121212;
+    background-color: #080e18;
     color: white;
     display: flex;
     flex-direction: row;
@@ -139,9 +145,7 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    width: fit-content;
-    margin-bottom: 20px;
+    margin: 0px 0px 10px 0px;
 }
 
 #title{
@@ -155,18 +159,11 @@ header{
     border-bottom: 5px solid white;
 }
 
-#cv, #git{
-    transition: background-color 0.5s, transform 0.2s;
+.header_button:hover, .nav_button:hover{
+    background-color: rgba(255, 255, 255, 0.100);
 }
 
-#cv:hover, #git:hover{
-    transform: scale(1.05);
-}
-#cv:hover{
-    background-color: #E60000;    
-}
-
-#git:hover{
-    background-color: #A800E6;
+.header_button, .nav_button{
+    transition: background-color 0.2s;
 }
 

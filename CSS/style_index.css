@@ -3,7 +3,7 @@
 *{
     margin: 0px;
     padding: 0px;
-    background-color: #252525;
+    background-color: transparent;
     color: white;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
@@ -17,17 +17,22 @@ h1{
     font-family: arial black;
 }
 
+body{
+    background: rgba(13, 23, 38, 1);
+}
+
 /** Changement pour les boutons dans le header */
 
 header{
     align-items: center;
-    background-color: #121212;
-    border-bottom: white;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
+    background: #080e18;
+    border: 1px solid white;
+    border-radius: 15px;
+    box-shadow: 0px 20px 50px 5px rgba(0,0,0,0.5);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin: 30px 200px 0px 200px;
     padding-left: 15px;
 }
 
@@ -39,19 +44,18 @@ header{
 }
 
 #header_nav{
-    background-color: #121212;
     border-radius: 15px;
 }
 
 .header_button{
     align-items: center;
-    background-color: white;
+    border: 1px solid white;
     border-radius: 10px;
     display: flex;
     flex-direction: row;
     height: auto; 
     justify-content: space-evenly;
-    padding: 10px;
+    padding: 5px;
     width: 150px;  
 }
 
@@ -63,24 +67,26 @@ header{
 /** Alignement des éléments dans le main */
 
 #main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 100px;
+    margin-top: 250px;
 }
 
 .txt_desc{
-    font-size: xx-large;
-    text-align: center;
+    font-size: x-large;
     padding: 10px;
-    
+}
+
+#details{
+    margin: 0px 0px 350px 250px;
 }
 
 #nav{
-    margin: 100px;
-    margin-left: 200px;
-    margin-right: 200px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 100px 200px 100px 200px;
+    background: #1B2D48;
+    background: radial-gradient(circle,rgba(27, 45, 72, 1) 60%, rgba(13, 23, 38, 1) 100%);
+    -webkit-box-shadow: 0px 0px 50px 20px rgba(0,0,0,0.5); 
+    box-shadow: 0px 0px 50px 20px rgba(0,0,0,0.5);
 }
 
 /** Changement pour les boutons dans le main */
@@ -92,61 +98,36 @@ header{
 
 .nav_button{
     align-items: center;
-    background-color: white;
+    border: 1px solid white;
     border-radius: 10px;
     display: flex;
     justify-content: space-evenly;
-    margin: 0x;
+    margin: 15px;
     padding: 10px;
     width: 225px;
+
 }
 
 .nav_txt{
-    color: black;
+    color: white;
     font-size: x-large;
 }
 
 .nav_link{
-    margin: 30px;
     background-color: transparent;
 }
 
 /** Style pour des éléments spécifiques */
 
 #name{
-    font-size: 75px;
+    font-size: 100px;
 }
 
-#cv, #git, #parc, #cert, #projet, #epreuve{
-    transition: background-color 0.5s, transform 0.2s;
+.header_button:hover, .nav_button:hover{
+    background-color: rgba(255, 255, 255, 0.100);
 }
 
-#cv:hover, #git:hover, #parc:hover, #cert:hover, #projet:hover, #epreuve:hover{
-    transform: scale(1.05);
+.header_button, .nav_button{
+    transition: background-color 0.2s;
 }
-#cv:hover{
-    background-color: #E60000;    
-}
-
-#git:hover{
-    background-color: #A800E6;
-}
-
-#parc:hover{
-    background-color: #3DE600;
-}
-
-#cert:hover{
-    background-color: #00E6E6;
-}
-
-#projet:hover{
-    background-color: #E6B400;
-}
-
-#epreuve:hover{
-    background-color: #1700E6;
-}
-
-
 
