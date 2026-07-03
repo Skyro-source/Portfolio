@@ -153,7 +153,7 @@ header{
     width: 160px;
     height: 160px;
     background-color: white;
-    margin: 30px;
+    margin: 0px 30px 20px 30px;
     border-radius: 10px;
     padding: 10px;
 }
@@ -165,18 +165,21 @@ header{
 
 .comp_txt{
     color: black;
-    padding: 10px;
+    padding: 0px 0px 0px 10px;
 }
 
-.txt_type{
-    background-color: white;
-    border-radius: 10px;
-    color: black;
-    font-size: 25px;
+.div_name{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     margin: 5px;
-    padding: 10px;
     padding-left: 30px;
     padding-right: 30px;
+}
+
+.img_type{
+    max-width: 45px;
+    padding: 15px;
 }
 
 /** Style pour des éléments spécifiques */

@@ -170,7 +170,7 @@ header{
     border-radius: 15px;
     padding: 20px;
     margin: 20px 0px 20px 0px;
-    max-width: 1300px;
+    width: 1300px;
 }
 
 .text_div{
@@ -188,7 +188,7 @@ header{
 
 #parc_txt{
     color:white;
-    padding-left: 20px;
+    padding: 15px;
 }
 
 #title_div{
@@ -210,7 +210,7 @@ header{
 }
 
 .parc_img{
-    width: 50px;
+    max-width: 45px;
     height: fit-content;
 }
 
