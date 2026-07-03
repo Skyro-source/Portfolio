@@ -201,5 +201,16 @@ header{
     transition: background-color 0.2s;
 }
 
+/* Alignement pour le footer */
 
+footer{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    border: 1px solid white;
+}
+
+#copyright{
+    color:rgb(255,255,255, 0.5)
+}
 
