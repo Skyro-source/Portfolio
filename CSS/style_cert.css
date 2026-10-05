@@ -1,0 +1,166 @@
+/** Changement pour tout le document */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    text-decoration: none;
+    font-family: "Clarity City", sans-serif;
+}
+
+img, h1, h2, h3, h4, p, a, i, strong{
+    background-color: transparent;
+}
+
+h1{
+    font-family: "Clarity City", sans-serif;
+    font-weight: 800;
+}
+
+body{
+    background: rgba(17, 24, 39);
+}
+
+/** Panneau de navigation sur la gauche */
+
+#nom{
+    padding: 30px 10px 30px 10px;
+    border-bottom: 1px solid rgba(55, 65, 81, 1);
+}
+
+#side_nav{
+    background-color: #080e18;
+    border-right: 1px solid rgba(55, 65, 81, 1);
+    /**box-shadow: 14px 0px 12px -10px rgba(0,0,0,0.5);*/
+    display: flex;
+    justify-content:space-between;
+    flex-direction: column;
+    height: 100%;
+    max-width: 20vw;
+    position: fixed; 
+    z-index: 0;
+}
+
+.nav_button, #nav_active{
+    background-color: #080e18;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: larger;
+    padding: 10px 20px 10px 20px;
+    margin: 2px 10px 2px 10px;
+    transition: background-color 0.3s ease;
+}
+
+.nav_img{
+    padding-right: 10px;
+    max-height: 35px;
+    height: auto;
+    transition: opacity 0.2s;
+}
+
+.nav_txt{
+    color: rgb(107, 107, 107);
+    transition: color 0.2s;
+}
+
+#nav_active{
+    background-color: rgba(255, 255, 255, 0.100);
+}
+
+#nav_txt_active{
+    color: white;
+}
+
+#copyright{
+    color:rgb(255,255,255, 0.5);
+    padding: 30px 0px 30px 0px;
+    border-top: 1px solid rgba(55, 65, 81, 1);
+}
+
+/** Contenu principal */
+
+#contents{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 85%;
+    margin-left: auto;
+    padding-bottom: 40px;
+}
+
+#title_div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 0px 10px 0px;
+}
+
+#title{
+    font-size: 60px;
+    padding: 10px;
+}
+
+#title_underline{
+    width: 50%;
+    border-radius: 5px;
+    border-bottom: 5px solid white;
+}
+
+.nav_button:hover{
+    background-color: rgba(255, 255, 255, 0.100);
+}
+
+.nav_button{
+    transition: background-color 0.2s;
+}
+
+/** Grille de cartes */
+
+#elements{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.cert_link{
+    display: contents;
+}
+
+.cert_div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid rgba(55, 65, 81, 1);
+    border-radius: 15px;
+    background-color: rgb(31 41 55);
+    margin: 10px 25px 25px 25px;
+    padding-bottom: 20px;
+    overflow: hidden;
+    width: 420px;
+    height: 310px;
+    transition: background-color 0.2s;
+}
+
+.cert_div:hover{
+    background-color: rgb(55 65 81);
+}
+
+.img_div{
+    overflow: hidden;
+}
+
+.cert_txt{
+    color: rgb(209 213 219);
+    padding: 20px 10px 0px 10px;
+    text-align: center;
+}
+
+.cert_img{
+    width: 100%;
+}

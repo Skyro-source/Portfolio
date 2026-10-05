@@ -1,0 +1,144 @@
+/** Changement pour tout le document */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img, h1, h2, p, a{
+    background-color: transparent;
+}
+
+h1{
+    font-family: arial black;
+}
+
+body{
+    background: rgba(13, 23, 38, 1);
+}
+
+/** Changement pour les boutons dans le header */
+
+header{
+    align-items: center;
+    background: #080e18;
+    border: 1px solid white;
+    border-radius: 15px;
+    box-shadow: 0px 20px 50px 5px rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 30px 200px 0px 200px;
+    padding-left: 15px;
+}
+
+#header_nav, #nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#header_nav{
+    border-radius: 15px;
+}
+
+.header_button{
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    height: auto; 
+    justify-content: space-evenly;
+    padding: 5px;
+    width: 150px;  
+}
+
+.header_link{
+    margin: 10px;
+    background-color: transparent;
+}
+
+/** Alignement des éléments dans le main */
+
+#main{
+    margin-top: 250px;
+}
+
+.txt_desc{
+    font-size: x-large;
+    padding: 10px;
+}
+
+#details{
+    margin: 0px 0px 350px 250px;
+}
+
+#nav{
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 100px 200px 100px 200px;
+    background: #1B2D48;
+    background: radial-gradient(circle,rgba(27, 45, 72, 1) 60%, rgba(13, 23, 38, 1) 100%);
+    -webkit-box-shadow: 0px 0px 50px 20px rgba(0,0,0,0.5); 
+    box-shadow: 0px 0px 50px 20px rgba(0,0,0,0.5);
+}
+
+/** Changement pour les boutons dans le main */
+
+.nav_img{
+    height: auto;
+    max-width: 50px;
+}
+
+.nav_button{
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 15px;
+    padding: 10px;
+    width: 225px;
+
+}
+
+.nav_txt{
+    color: white;
+    font-size: x-large;
+}
+
+.nav_link{
+    background-color: transparent;
+}
+
+/** Style pour des éléments spécifiques */
+
+#name{
+    font-size: 100px;
+}
+
+.header_button:hover, .nav_button:hover{
+    background-color: rgba(255, 255, 255, 0.100);
+}
+
+.header_button, .nav_button{
+    transition: background-color 0.2s;
+}
+
+/* Alignement pour le footer */
+
+footer{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+#copyright{
+    color:rgb(255,255,255, 0.5)
+}

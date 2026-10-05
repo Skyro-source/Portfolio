@@ -1,0 +1,216 @@
+/** Changement pour tout le document */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img, h1, h2, h3, h4, p, a, i{
+    background-color: transparent;
+}
+
+h1{
+    font-family: arial black;
+}
+
+body{
+    background: rgba(13, 23, 38, 1);
+}
+
+/** Changement pour les boutons dans le header */
+
+header{
+    position: sticky; /** Garde le header toujours en haut de la page */
+    top: 0;
+    align-items: center;
+    background-color: #080e18;
+    border-bottom: white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 15px;
+    z-index: 1;
+}
+
+#header_nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: transparent;
+    border-radius: 15px;
+}
+
+.header_button{
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    height: auto; 
+    justify-content: space-evenly;
+    padding: 5px;
+    width: 150px;  
+}
+
+.header_link{
+    margin: 10px;
+    background-color: transparent;
+}
+
+.header_img{
+    height: auto;
+    max-width: 50px;
+    transition: opacity 0.2s;
+}
+
+.header_txt{
+    color: whit;
+    font-size: x-large;
+}
+
+/** Panneau de navigation sur la gauche */
+
+#side_nav{
+    background-color: #080e18;
+    border-right-color: white;
+    border-right-width: 1px;
+    border-right-style: solid;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 15%;
+    position: fixed; 
+    z-index: 0;
+}
+
+.nav_button, #nav_active{
+    background-color: #080e18;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: larger;
+    padding: 10px;
+    border-bottom: white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    transition: background-color 0.3s ease;
+}
+
+.nav_img{
+    padding-right: 10px;
+    max-height: 35px;
+    height: auto;
+    transition: opacity 0.3s ease;
+}
+
+#nav_txt{
+    transition: color 0.3s ease;
+}
+
+#nav_active{
+    background-color: white;
+}
+
+#nav_txt_active{
+    color: black;
+}
+
+/** Contenu principal */
+
+#contents{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    margin-left: auto; 
+}
+
+#elements {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.cert_div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 15px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: white;
+    margin: 10px 25px 35px 25px;
+    padding-bottom: 20px;
+    overflow: hidden;
+    width: 420px;
+    height: 310px;
+}
+
+.img_div{
+    overflow: hidden;  
+}
+
+.cert_img{
+    width: 100%;
+}
+
+.cert_txt{
+    padding-top: 20px;
+}
+
+#cert_link{
+    display: contents;
+}
+
+/** Style pour des éléments spécifiques */
+
+#title_div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 0px 20px 0px;
+}
+
+#title{
+    font-size: 60px;
+    padding: 10px;
+}
+
+#title_underline{
+    width: 50%;
+    border-radius: 5px;
+    border-bottom: 5px solid white;
+}
+
+.header_button:hover, .nav_button:hover, .cert_div:hover{
+    background-color: rgba(255, 255, 255, 0.100);
+}
+
+.header_button, .nav_button, .cert_div{
+    transition: background-color 0.2s;
+}
+
+/* Alignement pour le footer */
+
+footer{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    border: 1px solid white;
+}
+
+#copyright{
+    color:rgb(255,255,255, 0.5)
+}
+

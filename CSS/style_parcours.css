@@ -1,0 +1,231 @@
+/** Changement pour tout le document */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    text-decoration: none;
+    font-family: "Clarity City", sans-serif;
+}
+
+img, h1, h2, h3, h4, p, a, i, strong{
+    background-color: transparent;
+}
+
+h1{
+    font-family: "Clarity City", sans-serif;
+    font-weight: 800;
+}
+
+body{
+    background: rgba(17, 24, 39);
+}
+
+/** Panneau de navigation sur la gauche */
+
+#nom{
+    padding: 30px 10px 30px 10px;
+    border-bottom: 1px solid rgba(55, 65, 81, 1);
+}
+
+#side_nav{
+    background-color: #080e18;
+    border-right: 1px solid rgba(55, 65, 81, 1);
+    /**box-shadow: 14px 0px 12px -10px rgba(0,0,0,0.5);*/
+    display: flex;
+    justify-content:space-between;
+    flex-direction: column;
+    height: 100%;
+    max-width: 20vw;
+    position: fixed; 
+    z-index: 0;
+}
+
+.nav_button, #nav_active{
+    background-color: #080e18;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: larger;
+    padding: 10px 20px 10px 20px;
+    margin: 2px 10px 2px 10px;
+    transition: background-color 0.3s ease;
+}
+
+.nav_img{
+    padding-right: 10px;
+    max-height: 35px;
+    height: auto;
+    transition: opacity 0.2s;
+}
+
+.nav_txt{
+    color: rgb(107, 107, 107);
+    transition: color 0.2s;
+}
+
+#nav_active{
+    background-color: rgba(255, 255, 255, 0.100);
+}
+
+#nav_txt_active{
+    color: white;
+}
+
+#copyright{
+    color:rgb(255,255,255, 0.5);
+    padding: 30px 0px 30px 0px;
+    border-top: 1px solid rgba(55, 65, 81, 1);
+}
+
+/** Contenu principal */
+
+#contents{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 85%;
+    margin-left: auto;
+}
+
+.layout{
+    display: flex;
+    flex-direction: row;
+}
+
+.div_type{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    margin: 20px 0px 0px 0px;
+    width: fit-content;
+}
+
+.line{
+    border-radius: 2px;
+    width: 2px;
+    background-color: rgba(55, 65, 81, 1);
+    margin: 50px 35px 50px 65px
+}
+
+.elements {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.parc_div{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid rgba(55, 65, 81, 1);
+    border-radius: 15px;
+    background-color: rgb(31 41 55);
+    padding: 20px;
+    margin: 20px 0px 20px 0px;
+    width: 70vw;
+}
+
+.text_div{
+    max-width: fit-content;
+}
+
+.img_div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/** Style pour des éléments spécifiques */
+
+#parc_txt{
+    color:rgb(209 213 219);
+    padding: 15px;
+}
+
+#title_div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 0px 10px 0px;
+}
+
+#title{
+    color: rgb(245, 245, 245);
+    font-size: 60px;
+    padding: 10px;
+}
+
+#title_underline{
+    width: 300%;
+    border-radius: 5px;
+    border-bottom: 2px solid rgb(245, 245, 245);
+}
+
+.parc_img{
+    max-width: 45px;
+    height: fit-content;
+}
+
+.logo_ecole{
+    max-height: 60px;
+}
+
+.img_ecole{
+    margin: 20px;
+    max-width: 350px;
+    border-radius: 15px;
+}
+
+.txt_desc{  
+    padding: 10px;
+}
+
+#txt_form{
+    color: white;
+    font-size: 25px;
+}
+
+#txt_ecole{
+    color: rgb(209 213 219);
+    font-size: 20px;
+}
+
+#p_desc, .lien_ecole{
+    color: rgb(156 163 175);
+    font-size: 15px;
+}
+
+.lien_ecole{
+    font-size: 20px;
+}
+
+#spe{
+    font-size: 20px;
+    color: rgb(209 213 219);
+}
+
+strong, strong > #spe{
+    color: rgb(209 213 219);
+}
+
+.lien_ecole{
+    border-radius: 10px;
+    border: 1px solid rgba(55, 65, 81, 1);
+    color: solid;
+    padding: 10px;
+    padding-left: 75px;
+    padding-right: 75px;
+}
+
+.lien_ecole:hover, .header_button:hover, .nav_button:hover{
+    background-color: rgba(255, 255, 255, 0.100);
+}
+
+.header_button, .lien_ecole, .nav_button{
+    transition: background-color 0.2s;
+}
