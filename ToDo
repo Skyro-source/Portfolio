@@ -1,9 +1,4 @@
 Rendre la page de compétences plus joli
-Ajouter un menu déroulable pour les stages
-
-Comment faire :
-
-Mettre un bouton qui ajoute ou enlève du HTML d'un <div> avec du JS
-
 Mettre litérallement n'importe quoi dans le truc E5
-Remplir la section de e-secure dans le Parcours
+Créer un fichier JS pour gérer le panneau de nav à gauche
+Faire un fichier CSS pour toutes le variables partagées entre chaque document
