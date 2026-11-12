@@ -11,29 +11,40 @@ let content = new Array(
 );
 
 const current_page = document.getElementById("current_page").value; // Récupère l'ID de la page
-const nav = document.getElementById("nav_links"); // Récupère le div dans lequel seront mis les liens
+const nav = document.getElementById("side_nav"); // Récupère le div dans lequel seront le panneau de navigation
 
-// Mets les lien dans le div
-// Vérifie si l'élément à remplir est le même que celui de la page
-nav.innerHTML = content.map(c =>`  
+// Créé les lien dans le div
+function renderNavItem(c) {
 
-    ${String(c.id) === String(current_page) ? 
+    // Vérifie si l'élément à remplir est le même que celui de la page sur laquelle nous sommes
+    if (String(c.id) === String(current_page)) {
+        return `
+            <div class="nav_button" id="nav_active">
+                <img src="${c.img_path}" alt="${c.name}" class="nav_img">
+                <p id="nav_txt_active">${c.name}</p>
+            </div>`;
+    }
 
-        `<div class="nav_button" id="nav_active">
-            <img src="${c.img_path}" alt="${c.name}" class="nav_img">
-            <p id="nav_txt_active">${c.name}</p>
-        </div>`
-        
-        :
+    const target = c.id === 0 ? 'target="_blank" rel="noopener noreferrer"' : "";
 
-        `<a ${c.id === 0 ? 'target="_blank" rel="noopener noreferrer"' : ''} href="${c.link}" class="nav_link">
+    return `
+        <a ${target} href="${c.link}" class="nav_link">
             <div class="nav_button">
                 <img src="${c.img_path}" alt="${c.name}" class="nav_img">
                 <p class="nav_txt">${c.name}</p>
             </div>
-        </a>`
-    
-    }
- 
-`).join("");
+        </a>`;
+}
+
+const links = content.map(renderNavItem).join("");
+
+nav.innerHTML = `
+    <div><h1 id="nom" align="center">POURNY JOSH</h1></div>
+
+    <div id="nav_links">
+        ${links}
+    </div>
+
+    <div><p id="copyright" align="center">© 2026 · POURNY Josh</p></div>
+`;
 
