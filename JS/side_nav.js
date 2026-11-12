@@ -10,7 +10,6 @@ let content = new Array(
     //{id:7, link:"epreuve_e5.html", name:"Epreuve E5", img_path:"../Images/Logos/notepad.png"} SOUS RENOVATION
 );
 
-
 const current_page = document.getElementById("current_page").value; // Récupère l'ID de la page
 const nav = document.getElementById("nav_links"); // Récupère le div dans lequel seront mis les liens
 
