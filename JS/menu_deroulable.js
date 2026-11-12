@@ -151,7 +151,7 @@ para.innerHTML = `
 
 `;
 
-const element = document.getElementById("stage_1");
+const elements = document.getElementById("stage_1");
 const bouton = document.getElementById("bouton");
 const arrow = document.getElementById("arrow_1");
 
@@ -159,15 +159,15 @@ function afficher(i){
 
     if (i === 1){
         ouvert = i;
-        element.appendChild(para);
+        elements.appendChild(para);
         bouton.setAttribute('onclick', 'afficher(0)');
         arrow.src="../Images/Logos/arrow-up-svgrepo-com.png";
     }
     if (i === 0){
         ouvert = i;
-        element.removeChild(para);
+        elements.removeChild(para);
         bouton.setAttribute('onclick', 'afficher(1)');
         arrow.src="../Images/Logos/arrow-down-svgrepo-com.png";
     }
-
+    
 }
