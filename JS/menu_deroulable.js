@@ -1,7 +1,8 @@
-let ouvert = 0;
-const para = document.createElement("div");
+const contents = {};
+contents[1] = document.createElement("div");
+contents[2] = document.createElement("div");
 
-para.innerHTML = `
+contents[1].innerHTML = `
 
 <div class="elements">
 
@@ -147,23 +148,52 @@ para.innerHTML = `
 
 `;
 
-const elements = document.getElementById("stage_1");
-const bouton = document.getElementById("bouton");
-const arrow = document.getElementById("arrow_1");
+contents[2].innerHTML = `
+
+<!-- Semaine 1 -->
+
+<div class="elements">
+
+    <div class="stage_div">
+
+        <div class="text_div">
+            <h2 class="week">Semaine 1 - 09/11/26 au 13/05/26</h2>
+            <h4 class="main_task">Découverte de l'entreprise, des locaux & enseignements sur les méthodes de travail</h4>
+            <p class="details"><i>- Enseignements sur le fonctionnement de PowerApps, PowerPlatform, PowerBi, PowerAutomate, etc...</i></p>
+            <p class="details"><i>- Découverte des locaux et du SI.</i></p>
+            <p class="details"><i>- Prise en main du poste de travail assigné.</i></p>
+            <h4 class="main_task">Petites tâches quotidiennes</h4>
+            <p class="details"><i>- Inventaire de postes non actif dans l'AD (Active Directory).</i></p>
+            <p class="details"><i>- Travail scolaire externe durant des temps mort.</i></p>
+        </div>
+
+        <div class="img_div">
+            <img src="" alt="Placeholder" class="img_desc">
+            <p class="img_notes"><i></i></p>
+        </div>
+
+    </div>
+
+</div>
+`;
 
 function afficher(i){
 
-    if (i === 1){
-        ouvert = i;
-        elements.appendChild(para);
-        bouton.setAttribute('onclick', 'afficher(0)');
-        arrow.src="../Images/Logos/arrow-up-svgrepo-com.png";
-    }
-    if (i === 0){
-        ouvert = i;
-        elements.removeChild(para);
-        bouton.setAttribute('onclick', 'afficher(1)');
-        arrow.src="../Images/Logos/arrow-down-svgrepo-com.png";
-    }
-    
+    const bouton = document.getElementById(`bouton_${i}`);
+    const elements = document.getElementById(`stage_${i}`);
+    const arrow = document.getElementById(`arrow_${i}`);
+    elements.appendChild(contents[i]);
+    arrow.src="../Images/Logos/arrow-up-svgrepo-com.png";
+    bouton.setAttribute('onclick', `retirer(${i})`);    
 }
+
+function retirer(i){
+
+    const bouton = document.getElementById(`bouton_${i}`);
+    const elements = document.getElementById(`stage_${i}`);
+    const arrow = document.getElementById(`arrow_${i}`);
+    elements.removeChild(contents[i]);
+    arrow.src="../Images/Logos/arrow-down-svgrepo-com.png";
+    bouton.setAttribute('onclick', `afficher(${i})`);    
+}
+
