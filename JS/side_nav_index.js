@@ -1,3 +1,5 @@
+// Ce fichier est identique à l'autre, sauf pour les chemins relatives des pages HTML et images.
+
 // Déclaration de l'array contenant les données de navigation
 let nav_content = new Array(
     {id_nav:0, link:"index.html", name:"Accueil", img_path:"Images/Logos/home.png"},
@@ -37,8 +39,10 @@ function renderNavItem(c) {
         </a>`;
 }
 
+// Créé les liens
 const links = nav_content.map(renderNavItem).join("");
 
+// Créé le HTML complet pour le nav
 nav.innerHTML = `
     <div><h1 id="nom" align="center">POURNY JOSH</h1></div>
 

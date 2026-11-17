@@ -1,6 +1,10 @@
-const contents = {};
+const contents = {}; // Déclare un array pour contenir les variables qui contiendront les éléments HTML
 contents[1] = document.createElement("div");
 contents[2] = document.createElement("div");
+
+/** Nous le faisons comme ça afin de pouvoir sélectionner spécfiquement lequel on veut dans la variable
+ * afficher()/retirer().
+ */
 
 contents[1].innerHTML = `
 
@@ -179,12 +183,19 @@ contents[2].innerHTML = `
 
 function afficher(i){
 
-    const bouton = document.getElementById(`bouton_${i}`);
-    const elements = document.getElementById(`stage_${i}`);
-    const arrow = document.getElementById(`arrow_${i}`);
-    elements.appendChild(contents[i]);
-    arrow.src="../Images/Logos/arrow-up-svgrepo-com.png";
-    bouton.setAttribute('onclick', `retirer(${i})`);    
+    const bouton = document.getElementById(`bouton_${i}`); // Récupère le bouton sur lequel on a cliqué
+    const elements = document.getElementById(`stage_${i}`); // Récupère le div dans lequel le contenu sera inséré
+    const arrow = document.getElementById(`arrow_${i}`); // Récupère l'image de la flèche du bouton sur lequel on cliqué
+
+    /** La raison pour laquelle nous sélectionnons les éléments dans la fonction et non en dehors est
+     * pour qu'on puisse savoir exactement lequel prendre au lieu de sélectionner tout les mêmes éléments HTML.
+     * Cela permet également de réduire drastiquement la quantité de code à taper.
+     */
+
+    elements.appendChild(contents[i]); // Sélectionne le HTML à afficher dans l'array
+    arrow.src="../Images/Logos/arrow-up-svgrepo-com.png"; // Change la source de la flèche vers une flèche haut
+    bouton.setAttribute('onclick', `retirer(${i})`); // Change l'attribut du onclick
+
 }
 
 function retirer(i){
@@ -192,8 +203,10 @@ function retirer(i){
     const bouton = document.getElementById(`bouton_${i}`);
     const elements = document.getElementById(`stage_${i}`);
     const arrow = document.getElementById(`arrow_${i}`);
+    
     elements.removeChild(contents[i]);
     arrow.src="../Images/Logos/arrow-down-svgrepo-com.png";
-    bouton.setAttribute('onclick', `afficher(${i})`);    
+    bouton.setAttribute('onclick', `afficher(${i})`);
+
 }
 
