@@ -3,15 +3,26 @@
 #elements{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 
-.div_name{
+.comp{
+    border: 1px solid rgba(55, 65, 81, 1); 
+    border-radius: 15px;
     display: flex;
     flex-direction: row;
+    margin: 15px 15px 15px 30px;
+}
+.div_name{
     align-items: center;
-    margin: 20px 0px 10px 0px;
+    background-color: rgb(31 41 55);
+    border-right: 1px solid rgba(55, 65, 81, 1);
+    border-radius: 15px 0px 0px 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 240px;
 }
 
 .img_type{
@@ -20,9 +31,9 @@
 }
 
 .txt_type{
-    color: rgb(209 213 219);
+    color: rgb(209, 213, 219);
     font-size: 25px;
-    padding: 15px;
+    padding: 0px 0px 0px 15px;
 }
 
 .type_div{
@@ -39,10 +50,10 @@
     justify-content: space-evenly;
     width: 160px;
     height: 160px;
-    background-color: white;
-    border: 1px solid rgba(55, 65, 81, 1);
+    background-color: rgb(31 41 55);
+    border: 2px solid rgba(55, 65, 81, 1);
     border-radius: 15px;
-    margin: 0px 30px 20px 30px;
+    margin: 20px 30px 20px 30px;
     padding: 10px;
 }
 
@@ -52,5 +63,5 @@
 }
 
 .comp_txt{
-    color: black;
+    color: rgb(209, 213, 219);
 }
